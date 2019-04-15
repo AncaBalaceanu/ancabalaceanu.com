@@ -1,0 +1,231 @@
+html, body {
+    padding:0;
+    margin:0;
+}
+
+.cover {
+    background-image: url(images/yellow.png);
+    background-size:cover;
+    
+}
+nav {
+    width:100%;
+    height:6vh;
+    position:fixed;
+    z-index:8;
+    top: 0;
+    background:#fff;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+    padding:1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    font-family: quicksand;
+    color:#212121;
+}
+
+a:hover {
+    transition:0.3s;
+    border-bottom:2px solid #212121;
+}
+
+.home {
+    /* for classes */
+}
+
+#myphoto {
+    height: 600px;
+    width:auto;
+    
+}
+
+#about-container {
+    justify-content: center;
+    align-items: center;
+    height: 94vh;
+    display: flex;
+    background:#fcbe49;
+    padding-top: 6vh;
+}
+
+#home {
+    /* for IDs */
+    color:#000;
+    font-family: Lobster;
+    font-size:2em;
+}
+
+#about-text {
+    color:#fff;
+    font-family: quicksand;
+    text-align: right;
+	margin-right: 3rem;
+	width: auto;
+}
+
+#about-text h1 {
+    font-size: 45px;
+	margin: 0;
+	width: auto;
+}
+
+#about-text p {
+    font-size: 32px;
+    margin: 0!important;
+    width: 30rem;
+}
+
+header {
+    font-family: quicksand;
+    font-size: 30px;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    padding:0em 1em;
+}
+
+#featured-work {
+    height: auto;
+    display:flex;
+    flex-direction: column;
+}
+
+.projectimage {
+    height: 100%;
+    width: 100%;
+}
+
+.project {
+    height: 45vh;
+    width: 40vw;
+    margin: 0 0.5rem;
+    background-size: contain;
+}
+
+#featured-work h1 {
+    font-family: quicksand;
+    font-size: 36px;
+    text-align: center;
+    margin: 10rem 0;     
+}
+
+.row {
+    display: flex;
+    margin: 0.5rem 0;
+    justify-content: center;
+
+}
+
+/*-----work-----*/
+
+.inner-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    align-items:center;
+    align-self: center;
+    font-family: quicksand;
+    font-size: 24px;
+    text-align: justify;
+}
+
+.left-aligned {
+    align-self: flex-start;
+    margin: 0;
+}
+
+.projectcontent {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.projectcontent img {
+	margin:1.5rem;
+	width: 100%;
+}
+
+#rodencover {
+    width: 100%!important;
+    margin-top: 10vh;
+}
+
+#doc-cover {
+    width: 100%;
+    margin-top: 10vh;
+}
+
+#rodenmindmap {
+    width: 50%;
+}
+
+.projectitle {
+    font-family: quicksand;
+    font-size: 32px;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	height: 15vh;
+	margin: 10vh 0;
+}
+
+.footer h3 {
+	font-family: quicksand;
+	font-weight: 700;
+	font-size: 16px;
+	margin-bottom: 2rem;
+}
+
+.socials {
+	align-items: center;
+	justify-content: center;
+    display: flex;
+    padding: 0;
+	width: 100%;
+	display: flex;
+}
+
+.socials i {
+	font-size: 20px;
+	width: 100%;
+}
+
+.socials li {
+    display: inline;
+    padding: 0 2rem;
+}
+
+.socials li a {
+    color: black;
+    text-decoration: none!important;
+    transition: 0.5s;
+}
+
+.socials li a:hover {
+    color:#fcbe49;
+    text-decoration: none!important;
+}
+
+#copyright {
+	color: #666666;
+	font-family: quicksand;
+    font-size: 14px;
+    margin: 5vh;
+}
