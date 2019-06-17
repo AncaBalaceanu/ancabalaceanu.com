@@ -1,0 +1,189 @@
+#home {
+    position: relative;
+    width: 100vw;
+    height: auto;
+
+    #background-images {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        .background-flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #pink-left {
+            width: 450px;
+        }
+
+        #yellow-right {
+            width: 850px;
+        }
+
+        #line {
+            width: 100vw;
+            padding-top: 20px;
+        }
+
+        #purple-left {
+            width: 350px;
+        }
+
+        #orange-right {
+            height: 1100px;
+            padding-top: 750px;
+        }
+    }
+
+    #home-content {
+        position: relative;
+        z-index: 1;
+        margin-left: 25px;
+        margin-right: 25px;
+
+        #welcome-area {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            #welcome-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                color: #2832D2;
+                text-align: right;
+                margin-right: 75px;
+                max-width: 550px;
+
+                h1 {
+                    font-weight: 900;
+                    font-size: 50px;
+                    margin: 0;
+                }
+
+                h3 {
+                    font-weight: 500;
+                    margin: 0;
+                    font-size: 28px;
+                }
+
+                #welcome-bar {
+                    width: 75px;
+                    height: 5px;
+                    background-color: #F29A36;
+                    margin-top: 20px;
+                }
+            }
+
+            img {
+                width: 400px;
+            }
+        }
+
+        .section-title {
+            font-size: 45px;
+            color: #2832D2;
+            text-align: center;
+        }
+
+        #recent-work-section {
+            padding-top: 150px;
+
+            .work-area {
+                display: flex;
+                justify-content: center;
+                padding-top: 30px;
+                padding-bottom: 30px;
+
+                img {
+                    width: 550px;
+                }
+
+                #work-sample {
+                    color: #373737;
+                    width: 550px;
+
+                    h2 {
+                        font-size: 36px;
+                        margin-bottom: 0px;
+                    }
+
+                    h3 {
+                        margin-top: 0px;
+                        font-weight: 500;
+                    }
+
+                    .recent-work-line {
+                        width: 125px;
+                        height: 3px;
+                        background-color: #FDDD4A;
+                    }
+                }
+
+                .work-sample-left {
+                    text-align: right;
+                    margin-right: 60px;
+
+                    .recent-work-line {
+                        margin-left: auto;
+                    }
+                }
+
+                .work-sample-right {
+                    text-align: left;
+                    margin-left: 60px;
+                }
+            }
+        }
+
+        #other-projects-section {
+            margin-top: 150px;
+
+            .flex-proj-area {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+                .other-proj {
+                    .other-proj-img {
+                        width: 610px;
+                        height: 445px;
+                        background-color: #C4C4C4;
+                    }
+
+                    .other-proj-text {
+                        color: #373737;
+                        text-align: center;
+
+                        h2 {
+                            font-size: 28px;
+                            margin-bottom: 0px;
+                        }
+
+                        h3 {
+                            margin-top: 0px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+
+        // <div className="flex-proj-area">
+        //       <div className="other-proj">
+        //         <div className="other-proj-img" />
+        //       </div>
+        //     </div>
+    }
+}
+
+@media screen and (min-width: 901px) {
+    #home-content {
+        padding-top: 150px;
+    }
+}

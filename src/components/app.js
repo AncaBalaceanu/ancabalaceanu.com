@@ -1,52 +1,31 @@
 import React from 'react';
 import {
-  BrowserRouter as Router, Route, NavLink, Switch,
+  BrowserRouter as Router, Route, Switch,
 } from 'react-router-dom';
 
-const Nav = (props) => {
-  return (
-    <nav>
-      <ul>
-        <li><NavLink to="/" exact>Home</NavLink></li>
-        <li><NavLink to="/about">About</NavLink></li>
-        <li><NavLink to="/test/id1">test id1</NavLink></li>
-        <li><NavLink to="/test/id2">test id2</NavLink></li>
-      </ul>
-    </nav>
-  );
-};
+import Home from './home';
+import Nav from './nav';
+import Digital from './digital';
+import Physical from './physical';
+import Art from './art';
+import About from './about';
+import Fallback from './fallback';
 
-const About = (props) => {
-  return <div> All there is to know about me </div>;
-};
-
-const Welcome = (props) => {
-  return (
-    <div>
-      <p>Welcome</p>
-    </div>
-  );
-};
-
-const Test = (props) => {
-  return <div> ID: {props.match.params.id} </div>;
-};
-
-const FallBack = (props) => {
-  return <div>URL Not Found</div>;
-};
-
-const App = (props) => {
+const App = () => {
   return (
     <Router>
       <div>
         <Nav />
-        <Switch>
-          <Route exact path="/" component={Welcome} />
-          <Route path="/about" component={About} />
-          <Route exact path="/test/:id" component={Test} />
-          <Route component={FallBack} />
-        </Switch>
+        <div id="main-content">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/digital" component={Digital} />
+            <Route path="/physical" component={Physical} />
+            <Route path="/art" component={Art} />
+            <Route path="/about" component={About} />
+            <Route component={Fallback} />
+          </Switch>
+        </div>
       </div>
     </Router>
   );

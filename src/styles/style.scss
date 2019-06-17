@@ -1,4 +1,11 @@
 body, html {
-    font-family: "Roboto", sans-serif;
-    height: 100%;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 901px) {
+    #main-content {
+        padding-top: 20px;
+    }
 }
