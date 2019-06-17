@@ -2,7 +2,10 @@ import React from 'react';
 
 const Digital = () => {
   return (
-    <h1>Digital</h1>
+    <div className="content-container">
+      <h1>Digital</h1>
+      <p>This is the digital screen.</p>
+    </div>
   );
 };
 

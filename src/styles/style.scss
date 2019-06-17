@@ -4,6 +4,20 @@ body, html {
     padding: 0;
 }
 
+.route-wrapper {
+    position: relative;
+}
+
+.route-wrapper > div {
+    position: absolute;
+}
+
+.content-container {
+    padding-top: 85px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
 @media screen and (min-width: 901px) {
     #main-content {
         padding-top: 20px;
