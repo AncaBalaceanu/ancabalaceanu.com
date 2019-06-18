@@ -40,6 +40,12 @@
             height: 1850px;
             padding-top: 750px;
         }
+
+        #blue-bottom {
+            width: 100vw;
+            height: 405px;
+            padding-top: 225px;
+        }
     }
 
     #home-content {
@@ -178,13 +184,48 @@
                     }
                 }
             }
+
+            #discover-more {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 50px;
+
+                h3 {
+                    display: inline-block;
+                    padding: 10px 30px;
+                    background-color: #FFB1B5;
+                    color: white;
+                    font-size: 22px;
+                    border-radius: 40px;
+                }
+            }
         }
 
-        // <div className="flex-proj-area">
-        //       <div className="other-proj">
-        //         <div className="other-proj-img" />
-        //       </div>
-        //     </div>
+        #bottom-section {
+            display: flex;
+            justify-content: center;
+            padding-top: 175px;
+    
+            h2 {
+                color: #2028A7;
+                margin-right: 25px;
+            }
+    
+            #connect-section {
+                display: flex;
+                justify-content: space-around;
+                margin-left: 25px;
+    
+                .connect-icon {
+                    width: 35px;
+                    height: 35px;
+                    background-color: #C4C4C4;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    margin-top: 20px;
+                }
+            }
+        }
     }
 }
 

@@ -7,6 +7,7 @@ const yellowRight = require('../assets/home/yellow-right.png');
 const line = require('../assets/home/line.png');
 const purpleLeft = require('../assets/home/purple-left.png');
 const orangeRight = require('../assets/home/orange-right.png');
+const blueBottom = require('../assets/home/blue-bottom.png');
 
 const anca = require('../assets/home/anca.png');
 const recentWorkExample = require('../assets/home/recent-work.png');
@@ -19,12 +20,16 @@ const Home = () => {
           <Fade left><img src={pinkLeft} alt="pink left" id="pink-left" /></Fade>
           <Fade right><img src={yellowRight} alt="yellow right" id="yellow-right" /></Fade>
         </div>
+
         <Fade up><img src={line} alt="line" id="line" /></Fade>
 
         <div className="background-flex">
           <Fade left><img src={purpleLeft} alt="purple left" id="purple-left" /></Fade>
           <Fade right><img src={orangeRight} alt="orange right" id="orange-right" /></Fade>
         </div>
+
+        <Fade up><img src={blueBottom} alt="blue bottom" id="blue-bottom" /></Fade>
+
       </div>
 
       <div id="home-content">
@@ -128,6 +133,20 @@ const Home = () => {
                 </Fade>
               </div>
             </div>
+          </div>
+
+          <div id="discover-more">
+            <h3>Discover More</h3>
+          </div>
+        </div>
+
+        <div id="bottom-section">
+          <h2>Let’s get in touch!</h2>
+          <div id="connect-section">
+            <div className="connect-icon" />
+            <div className="connect-icon" />
+            <div className="connect-icon" />
+            <div className="connect-icon" />
           </div>
         </div>
       </div>
