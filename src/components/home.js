@@ -25,7 +25,7 @@ export default class Home extends React.Component {
     };
 
     window.onresize = () => {
-      if (window.innerWidth < 1206) {
+      if (window.innerWidth < 1209) {
         this.setState({
           recentProjWrap: true,
         });
