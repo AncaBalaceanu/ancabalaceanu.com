@@ -53,20 +53,21 @@ export default class Home extends React.Component {
     return (
       <div id="home">
         <div id="background-images">
-          <div className="background-flex">
-            <Fade left><img src={pinkLeft} alt="pink left" id="pink-left" /></Fade>
-            <Fade right><img src={yellowRight} alt="yellow right" id="yellow-right" /></Fade>
+          <div id="background-content">
+            <div className="background-flex">
+              <Fade left><img src={pinkLeft} alt="pink left" id="pink-left" /></Fade>
+              <Fade right><img src={yellowRight} alt="yellow right" id="yellow-right" /></Fade>
+            </div>
+
+            <Fade up><img src={this.state.lineImage} alt="line" id="line" /></Fade>
+
+            <div className="background-flex">
+              <Fade left><img src={purpleLeft} alt="purple left" id="purple-left" /></Fade>
+              <Fade right><img src={orangeRight} alt="orange right" id="orange-right" /></Fade>
+            </div>
+
+            <Fade up><img src={blueBottom} alt="blue bottom" id="blue-bottom" /></Fade>
           </div>
-
-          <Fade up><img src={this.state.lineImage} alt="line" id="line" /></Fade>
-
-          <div className="background-flex">
-            <Fade left><img src={purpleLeft} alt="purple left" id="purple-left" /></Fade>
-            <Fade right><img src={orangeRight} alt="orange right" id="orange-right" /></Fade>
-          </div>
-
-          <Fade up><img src={blueBottom} alt="blue bottom" id="blue-bottom" /></Fade>
-
         </div>
 
         <div id="home-content">
