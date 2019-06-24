@@ -100,6 +100,14 @@
                         height: 3px;
                         background-color: #FDDD4A;
                     }
+
+                    .read-case-button {
+                        padding: 5px 25px;
+                        display: inline-block;
+                        background-image: linear-gradient(#FFEC97, #FBCE00);
+                        border-radius: 10px;
+                        cursor: pointer;
+                    }
                 }
 
                 .work-sample-left {
@@ -110,74 +118,64 @@
             }
         }
 
-        #other-projects-section {
-            margin-top: 150px;
+        #skills-section {
+            margin-left: 40px;
+            margin-right: 40px;
+            padding-bottom: 150px;
 
-            .flex-proj-area {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                flex-wrap: wrap;
+           #skills {
+               display: flex;
+               justify-content: space-between;
 
-                .other-proj {
-                    .other-proj-img {
-                        background-color: #C4C4C4;
-                        margin-top: 20px;
-                        margin-bottom: 20px;
+               .skills-text-area {
+                    text-align: center;
+
+                    p {
+                        max-width: 300px;
                     }
+               }
 
-                    .other-proj-text {
-                        color: #373737;
-                        text-align: center;
+               .skills-filler-area {
+                    margin-left: 20px;
+                    margin-right: 20px;
 
-                        h2 {
-                            font-size: 28px;
-                            margin-bottom: 0px;
-                        }
-
-                        h3 {
-                            margin-top: 0px;
-                            font-weight: 500;
-                        }
-                    }
-                }
-            }
-
-            #discover-more {
-                display: flex;
-                justify-content: center;
-                margin-bottom: 50px;
-
-                h3 {
-                    display: inline-block;
-                    padding: 10px 30px;
-                    background-color: #FFB1B5;
-                    color: white;
-                    font-size: 22px;
-                    border-radius: 40px;
-                }
-            }
+                   img {
+                       width: 40px;
+                       height: 350px;
+                   }
+               }
+           }
         }
 
         #bottom-section {
-            display: flex;
-            justify-content: center;
-    
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+
             h2 {
                 color: #2028A7;
+                display: inline-block;
             }
     
             #connect-section {
                 display: flex;
-                justify-content: space-around;
-    
-                .connect-icon {
+                justify-content: center;
+                align-items: center;
+                max-width: 215px;
+
+                #linkedin {
                     width: 35px;
                     height: 35px;
-                    background-color: #C4C4C4;
+                }
+
+                #mail {
+                    width: 35px;
+                    height: 25px;
+                }
+    
+                .connect-icon {
                     margin-left: 10px;
                     margin-right: 10px;
-                    margin-top: 20px;
                 }
             }
         }
@@ -227,26 +225,25 @@
         }
 
         #yellow-right {
-            width: 775px;
-            height: 800px;
+            width: 700px;
+            height: 700px;
             margin-left: auto;
         }
 
         #line {
             width: 100vw;
             height: 362px;
-            padding-top: 20px;
         }
 
         #purple-left {
-            width: 350px;
-            height: 1850px;
+            width: 175px;
+            height: 925px;
         }
 
         #orange-right {
-            height: 1100px;
-            height: 1850px;
-            padding-top: 750px;
+            height: 550px;
+            height: 925px;
+            padding-top: 550px;
             margin-left: auto;
         }
 
@@ -257,7 +254,7 @@
     }
 }
 
-@media screen and (max-width: 1208px) {
+@media screen and (max-width: 1224px) {
     #home-content {
         #recent-work-section {
             .work-area {
@@ -295,7 +292,6 @@
         #line {
             width: 100vw;
             height: 362px;
-            padding-top: 100px;
         }
 
         #purple-left {
@@ -371,17 +367,6 @@
 
 @media screen and (min-width: 649px) {
     #home-content {
-        #other-projects-section {
-            .flex-proj-area {
-                .other-proj {
-                    .other-proj-img {
-                        width: 610px;
-                        height: 445px;
-                    }
-                }
-            }
-        }
-
         #recent-work-section {
             .work-area {
                 img {
@@ -395,50 +380,12 @@
 
 @media screen and (max-width: 649px) {
     #home-content {
-        #other-projects-section {
-            .flex-proj-area {
-                .other-proj {
-                    .other-proj-img {
-                        width: 75vw;
-                        height: 70vw;
-                    }
-                }
-            }
-        }
-
         #recent-work-section {
             .work-area {
                 img {
                     width: 75vw;
                     height: 70vw;
                 }
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 532px) {
-    #home-content {
-        #bottom-section {
-            h2 {
-                margin-right: 25px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 532px) {
-    #home-content {
-        #bottom-section {
-            flex-direction: column;
-            text-align: center;
-
-            h2 {
-                margin-right: 0px;
-            }
-
-            #connect-section {
-                margin-left: 0px;
             }
         }
     }

@@ -14,6 +14,12 @@ const blueBottom = require('../assets/home/blue-bottom.png');
 const anca = require('../assets/home/anca.png');
 const recentWorkExample = require('../assets/home/recent-work.png');
 
+const pinkDottedLineLeft = require('../assets/home/pink-dotted-line-left.png');
+const pinkDottedLineRight = require('../assets/home/pink-dotted-line-right.png');
+
+const linkedinIcon = require('../assets/home/linkedin-icon.png');
+const mailIcon = require('../assets/home/mail-icon.png');
+
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -94,6 +100,7 @@ export default class Home extends React.Component {
                       <h3>my role</h3>
                       <div className="recent-work-line" />
                       <p>description</p>
+                      <h3 className="read-case-button">read case</h3>
                     </div>
                   </Fade>
                 </div>
@@ -107,6 +114,7 @@ export default class Home extends React.Component {
                         <h3>my role</h3>
                         <div className="recent-work-line" />
                         <p>description</p>
+                        <h3 className="read-case-button">read case</h3>
                       </div>
                     </Fade>
                   ) : (
@@ -116,6 +124,7 @@ export default class Home extends React.Component {
                         <h3>my role</h3>
                         <div className="recent-work-line" />
                         <p>description</p>
+                        <h3 className="read-case-button">read case</h3>
                       </div>
                       <img src={recentWorkExample} alt="recent work example" />
                     </Fade>
@@ -130,6 +139,7 @@ export default class Home extends React.Component {
                       <h3>my role</h3>
                       <div className="recent-work-line" />
                       <p>description</p>
+                      <h3 className="read-case-button">read case</h3>
                     </div>
                   </Fade>
                 </div>
@@ -137,66 +147,52 @@ export default class Home extends React.Component {
             </Fade>
           </div>
 
-          <div id="other-projects-section">
+          <div id="skills-section">
             <Fade up>
-              <h1 className="section-title">OTHER PROJECTS</h1>
+              <h1 className="section-title">SKILLS</h1>
             </Fade>
 
-            <div id="other-projects">
-              <div className="flex-proj-area">
-                <div className="other-proj">
-                  <Fade left>
-                    <div className="other-proj-img" />
-                    <div className="other-proj-text">
-                      <h2>NAME OF PROJECT</h2>
-                      <h3>my role</h3>
-                    </div>
-                  </Fade>
-                </div>
-                <div className="other-proj">
-                  <Fade right>
-                    <div className="other-proj-img" />
-                    <div className="other-proj-text">
-                      <h2>NAME OF PROJECT</h2>
-                      <h3>my role</h3>
-                    </div>
-                  </Fade>
-                </div>
+            <div id="skills">
+              <div className="skills-text-area">
+                <h2>Skill 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
               </div>
-              <div className="flex-proj-area">
-                <div className="other-proj">
-                  <Fade left>
-                    <div className="other-proj-img" />
-                    <div className="other-proj-text">
-                      <h2>NAME OF PROJECT</h2>
-                      <h3>my role</h3>
-                    </div>
-                  </Fade>
-                </div>
-                <div className="other-proj">
-                  <Fade right>
-                    <div className="other-proj-img" />
-                    <div className="other-proj-text">
-                      <h2>NAME OF PROJECT</h2>
-                      <h3>my role</h3>
-                    </div>
-                  </Fade>
-                </div>
+
+              <div className="skills-filler-area">
+                <img src={pinkDottedLineLeft} alt="pink dotted line left" />
+              </div>
+
+              <div className="skills-text-area">
+                <h2>Skill 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+
+              <div className="skills-filler-area">
+                <img src={pinkDottedLineRight} alt="pink dotted line right" />
+              </div>
+
+              <div className="skills-text-area">
+                <h2>Skill 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
               </div>
             </div>
 
-            <div id="discover-more">
-              <h3>Discover More</h3>
-            </div>
           </div>
 
           <div id="bottom-section">
             <h2>Let’s get in touch!</h2>
             <div id="connect-section">
-              <div className="connect-icon" />
-              <div className="connect-icon" />
-              <div className="connect-icon" />
-              <div className="connect-icon" />
+              <a href="https://www.linkedin.com/in/ancabalaceanu" target="_blank" rel="noopener noreferrer"><img src={linkedinIcon} alt="linkedin icon" id="linkedin" className="connect-icon" /></a>
+              <a href="mailto:anca.i.balaceanu.20@dartmouth.edu"><img src={mailIcon} alt="mail icon" id="mail" className="connect-icon" /></a>
             </div>
           </div>
         </div>
