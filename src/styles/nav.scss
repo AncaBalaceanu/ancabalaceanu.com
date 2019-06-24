@@ -10,8 +10,6 @@ nav {
 
     #navlinks {
         a {
-            margin-left: 40px;
-            margin-right: 40px;
             font-weight: bold;
             color: #2832D2;
             text-decoration: none;
@@ -19,6 +17,11 @@ nav {
 
         a:hover {
             text-decoration: underline;
+        }
+
+        #current-page {
+            color: white;
+            background-color: #2832D2;
         }
     }
 }
@@ -29,16 +32,20 @@ nav {
         justify-content: space-between;
         position: fixed;
         top: 0;
-        padding: 20px;
+
+        img {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
 
         #navlinks {
             display: flex;
-            justify-content: space-around;
+            justify-content: flex-end;
             align-items: center;
-            margin-right: 25px;
 
             a {
                 font-size: 28px;
+                padding: 15px 40px;
             }
 
             #home {

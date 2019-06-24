@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter as Router, Route, Switch,
+  BrowserRouter as Router, Route, Switch, withRouter,
 } from 'react-router-dom';
 
 import Home from './home';
@@ -11,11 +11,14 @@ import Art from './art';
 import About from './about';
 import Fallback from './fallback';
 
+const NavWithRouter = withRouter(props => <Nav {...props} />);
+
 const App = () => {
   return (
     <Router>
       <div>
-        <Nav />
+        <NavWithRouter />
+        {/* <Nav /> */}
         <div id="main-content">
           <Switch>
             <Route exact path="/" component={Home} />
