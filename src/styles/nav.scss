@@ -18,11 +18,6 @@ nav {
         a:hover {
             text-decoration: underline;
         }
-
-        #current-page {
-            color: white;
-            background-color: #2832D2;
-        }
     }
 }
 
@@ -46,6 +41,11 @@ nav {
             a {
                 font-size: 28px;
                 padding: 15px 40px;
+            }
+
+            #current-page {
+                color: white;
+                background-color: #2832D2;
             }
 
             #home {
@@ -73,6 +73,7 @@ nav {
 
             a {
                 font-size: 26px;
+                padding: 0px 20px;
             }
 
             #home {
