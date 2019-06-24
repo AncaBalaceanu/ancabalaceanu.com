@@ -2,6 +2,7 @@
 import React from 'react';
 import '../styles/home.scss';
 import { Fade } from 'react-reveal';
+import { Link } from 'react-router-dom';
 
 const pinkLeft = require('../assets/home/pink-left.png');
 const yellowRight = require('../assets/home/yellow-right.png');
@@ -100,7 +101,7 @@ export default class Home extends React.Component {
                       <h3>my role</h3>
                       <div className="recent-work-line" />
                       <p>description</p>
-                      <h3 className="read-case-button">read case</h3>
+                      <Link to="/demo-project"><h3 className="read-case-button">read case</h3></Link>
                     </div>
                   </Fade>
                 </div>
@@ -114,7 +115,7 @@ export default class Home extends React.Component {
                         <h3>my role</h3>
                         <div className="recent-work-line" />
                         <p>description</p>
-                        <h3 className="read-case-button">read case</h3>
+                        <Link to="/demo-project"><h3 className="read-case-button">read case</h3></Link>
                       </div>
                     </Fade>
                   ) : (
@@ -124,7 +125,7 @@ export default class Home extends React.Component {
                         <h3>my role</h3>
                         <div className="recent-work-line" />
                         <p>description</p>
-                        <h3 className="read-case-button">read case</h3>
+                        <Link to="/demo-project"><h3 className="read-case-button">read case</h3></Link>
                       </div>
                       <img src={recentWorkExample} alt="recent work example" />
                     </Fade>
@@ -139,7 +140,7 @@ export default class Home extends React.Component {
                       <h3>my role</h3>
                       <div className="recent-work-line" />
                       <p>description</p>
-                      <h3 className="read-case-button">read case</h3>
+                      <Link to="/demo-project"><h3 className="read-case-button">read case</h3></Link>
                     </div>
                   </Fade>
                 </div>

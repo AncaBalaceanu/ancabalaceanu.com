@@ -1,5 +1,6 @@
 import React from 'react';
 import { Fade } from 'react-reveal';
+import { Link } from 'react-router-dom';
 import '../styles/digital.scss';
 
 const recentWorkExample = require('../assets/home/recent-work.png');
@@ -16,7 +17,7 @@ const Digital = () => {
             <h3>my role</h3>
             <div className="recent-work-line" />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <h3 className="read-case-button">read case</h3>
+            <Link to="/demo-project"><h3 className="read-case-button">read case</h3></Link>
           </div>
         </Fade>
       </div>
@@ -29,7 +30,7 @@ const Digital = () => {
             <h3>my role</h3>
             <div className="recent-work-line" />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <h3 className="read-case-button">read case</h3>
+            <Link to="/demo-project"><h3 className="read-case-button">read case</h3></Link>
           </div>
         </Fade>
       </div>
@@ -42,7 +43,7 @@ const Digital = () => {
             <h3>my role</h3>
             <div className="recent-work-line" />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <h3 className="read-case-button">read case</h3>
+            <Link to="/demo-project"><h3 className="read-case-button">read case</h3></Link>
           </div>
         </Fade>
       </div>
@@ -55,7 +56,7 @@ const Digital = () => {
             <h3>my role</h3>
             <div className="recent-work-line" />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <h3 className="read-case-button">read case</h3>
+            <Link to="/demo-project"><h3 className="read-case-button">read case</h3></Link>
           </div>
         </Fade>
       </div>
@@ -64,18 +65,26 @@ const Digital = () => {
         <div id="explore-more-section">
           <h1 id="title">explore more physical design projects</h1>
           <div id="img-preview-area">
-            <div className="img-preview">
-              <img src={moreProjImage} alt="recent work" />
-              <h2>NAME OF PROJECT</h2>
-            </div>
-            <div className="img-preview">
-              <img src={moreProjImage} alt="recent work" />
-              <h2>NAME OF PROJECT</h2>
-            </div>
-            <div className="img-preview">
-              <img src={moreProjImage} alt="recent work" />
-              <h2>NAME OF PROJECT</h2>
-            </div>
+            <Link to="/demo-project">
+              <div className="img-preview">
+                <img src={moreProjImage} alt="recent work" />
+                <h2>NAME OF PROJECT</h2>
+              </div>
+            </Link>
+
+            <Link to="/demo-project">
+              <div className="img-preview">
+                <img src={moreProjImage} alt="recent work" />
+                <h2>NAME OF PROJECT</h2>
+              </div>
+            </Link>
+
+            <Link to="/demo-project">
+              <div className="img-preview">
+                <img src={moreProjImage} alt="recent work" />
+                <h2>NAME OF PROJECT</h2>
+              </div>
+            </Link>
           </div>
         </div>
       </Fade>
