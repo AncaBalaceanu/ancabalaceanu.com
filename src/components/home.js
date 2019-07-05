@@ -100,7 +100,7 @@ export default class Home extends React.Component {
                       <h2>Name of Project</h2>
                       <h3>my role</h3>
                       <div className="recent-work-line" />
-                      <p>description</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       <Link to="/demo-project"><h3 className="read-case-button">read case</h3></Link>
                     </div>
                   </Fade>
@@ -114,7 +114,7 @@ export default class Home extends React.Component {
                         <h2>Name of Project</h2>
                         <h3>my role</h3>
                         <div className="recent-work-line" />
-                        <p>description</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <Link to="/demo-project"><h3 className="read-case-button">read case</h3></Link>
                       </div>
                     </Fade>
@@ -124,7 +124,7 @@ export default class Home extends React.Component {
                         <h2>Name of Project</h2>
                         <h3>my role</h3>
                         <div className="recent-work-line" />
-                        <p>description</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <Link to="/demo-project"><h3 className="read-case-button">read case</h3></Link>
                       </div>
                       <img src={recentWorkExample} alt="recent work example" />
@@ -139,7 +139,7 @@ export default class Home extends React.Component {
                       <h2>Name of Project</h2>
                       <h3>my role</h3>
                       <div className="recent-work-line" />
-                      <p>description</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       <Link to="/demo-project"><h3 className="read-case-button">read case</h3></Link>
                     </div>
                   </Fade>

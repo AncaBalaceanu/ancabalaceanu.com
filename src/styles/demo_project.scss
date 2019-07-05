@@ -24,7 +24,34 @@
         margin-right: auto;
 
         .section {
-            margin-bottom: 50px;
+            display: flex;
+            justify-content: flex-start;
+
+            .line-circle {
+                flex: 0 0 30px;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: #FBD214;
+                transform: translateX(16.5px)
+            }
+
+            .no-border {
+                border-left: none !important;
+            }
+
+            .section-text {
+                padding-left: 45px;
+                border-left: 4px dashed #FBD214;
+
+                h2 {
+                    margin-top: 0px;
+                }
+
+                .bottom-part {
+                    padding-bottom: 50px;
+                }
+            }
 
             .image-section {
                 display: flex;
@@ -47,6 +74,12 @@
 @media screen and (min-width: 901px) {
     #demo-project-content {
         padding-top: 85px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .no-border {
+        margin-bottom: 75px;
     }
 }
 

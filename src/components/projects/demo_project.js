@@ -18,87 +18,108 @@ const DemoProject = () => {
       <div id="content-area">
         <Fade up>
           <div className="section">
-            <h2>Timeline & Team</h2>
-            <p style={{ maxWidth: '400px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <div className="line-circle" />
+            <div className="section-text">
+              <h2>Timeline & Team</h2>
+              <p className="bottom-part" style={{ maxWidth: '400px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
           </div>
         </Fade>
 
         <Fade up>
           <div className="section">
-            <h2>My Role</h2>
-            <p style={{ maxWidth: '850px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+            <div className="line-circle" />
+            <div className="section-text">
+              <h2>My Role</h2>
+              <p className="bottom-part" style={{ maxWidth: '850px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum
                 dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            </p>
-          </div>
-        </Fade>
-
-        <Fade up>
-          <div className="section">
-            <h2>Understanding the Problem</h2>
-            <p style={{ maxWidth: '850px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet.</p>
-
-            <div className="image-section">
-              <div className="demo-img" />
-              <div className="demo-img" />
+              </p>
             </div>
           </div>
         </Fade>
 
         <Fade up>
           <div className="section">
-            <h2>Exporing Solutions</h2>
-            <p style={{ maxWidth: '850px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet.</p>
+            <div className="line-circle" />
+            <div className="section-text">
+              <h2>Understanding the Problem</h2>
+              <p style={{ maxWidth: '850px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet.</p>
 
-            <div className="image-section">
-              <div className="demo-img" />
-              <div className="demo-img" />
-              <div className="demo-img" />
-              <div className="demo-img" />
-              <div className="demo-img" />
-              <div className="demo-img" />
+              <div className="image-section bottom-part">
+                <div className="demo-img" />
+                <div className="demo-img" />
+              </div>
             </div>
           </div>
         </Fade>
 
         <Fade up>
           <div className="section">
-            <h2>Testing & Iterating</h2>
-            <p style={{ maxWidth: '850px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet.</p>
+            <div className="line-circle" />
+            <div className="section-text">
+              <h2>Exporing Solutions</h2>
+              <p style={{ maxWidth: '850px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet.</p>
 
-            <div className="image-section">
-              <div className="demo-img" />
-              <div className="demo-img" />
-              <div className="demo-img" />
-            </div>
-
-            <p style={{ maxWidth: '850px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet.</p>
-
-            <div className="image-section">
-              <div className="demo-img" />
-              <div className="demo-img" />
-              <div className="demo-img" />
+              <div className="image-section bottom-part">
+                <div className="demo-img" />
+                <div className="demo-img" />
+                <div className="demo-img" />
+                <div className="demo-img" />
+                <div className="demo-img" />
+                <div className="demo-img" />
+              </div>
             </div>
           </div>
         </Fade>
 
         <Fade up>
           <div className="section">
-            <h2>Deliverable</h2>
-            <p style={{ maxWidth: '850px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet.</p>
+            <div className="line-circle" />
+            <div className="section-text">
+              <h2>Testing & Iterating</h2>
+              <p style={{ maxWidth: '850px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet.</p>
 
-            <div className="image-section">
-              <div className="demo-img" />
-              <div className="demo-img" />
-              <div className="demo-img" />
+              <div className="image-section">
+                <div className="demo-img" />
+                <div className="demo-img" />
+                <div className="demo-img" />
+              </div>
+
+              <p style={{ maxWidth: '850px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet.</p>
+
+              <div className="image-section bottom-part">
+                <div className="demo-img" />
+                <div className="demo-img" />
+                <div className="demo-img" />
+              </div>
             </div>
           </div>
         </Fade>
 
         <Fade up>
           <div className="section">
-            <h2>Reflections</h2>
-            <p style={{ maxWidth: '850px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet.</p>
+            <div className="line-circle" />
+            <div className="section-text">
+              <h2>Deliverable</h2>
+              <p style={{ maxWidth: '850px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet.</p>
+
+              <div className="image-section bottom-part">
+                <div className="demo-img" />
+                <div className="demo-img" />
+                <div className="demo-img" />
+              </div>
+            </div>
+          </div>
+        </Fade>
+
+        <Fade up>
+          <div className="section">
+            <div className="line-circle" />
+            <div className="section-text no-border">
+              <h2>Reflections</h2>
+              <p className="bottom-part" style={{ maxWidth: '850px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet.</p>
+            </div>
           </div>
         </Fade>
 
