@@ -83,6 +83,12 @@
     }
 }
 
+@media screen and (max-width: 700px) {
+    .no-border {
+        margin-bottom: 175px;
+    }
+}
+
 @media screen and (max-width: 800px) {
     #demo-project-content {
         #top-area {
