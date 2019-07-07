@@ -2,7 +2,7 @@ import React from 'react';
 
 const Fallback = () => {
   return (
-    <h1>URL Not Found</h1>
+    <h1 style={{ paddingTop: '55px', paddingLeft: '35px' }}>URL Not Found</h1>
   );
 };
 

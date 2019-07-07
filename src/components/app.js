@@ -14,6 +14,7 @@ import About from './about';
 import Fallback from './fallback';
 
 import DemoProject from './projects/demo_project';
+import Project2 from './projects/project2';
 
 const NavWithRouter = withRouter(props => <Nav {...props} />);
 
@@ -30,6 +31,7 @@ const App = () => {
             <Route path="/art" component={Art} />
             <Route path="/about" component={About} />
             <Route path="/demo-project" component={DemoProject} />
+            <Route path="/project2" component={Project2} />
             <Route component={Fallback} />
           </Switch>
         </div>

@@ -30,7 +30,7 @@ const Digital = () => {
             <h3>my role</h3>
             <div className="recent-work-line" />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <Link to="/demo-project"><h3 className="read-case-button">read case</h3></Link>
+            <Link to="/project2"><h3 className="read-case-button">read case</h3></Link>
           </div>
         </Fade>
       </div>
@@ -72,10 +72,10 @@ const Digital = () => {
               </div>
             </Link>
 
-            <Link to="/demo-project">
+            <Link to="/project2">
               <div className="img-preview">
                 <img src={moreProjImage} alt="recent work" />
-                <h2>NAME OF PROJECT</h2>
+                <h2>PROJECT 2</h2>
               </div>
             </Link>
 
