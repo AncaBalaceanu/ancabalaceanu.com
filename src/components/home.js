@@ -1,203 +1,136 @@
-/* eslint-disable react/no-will-update-set-state */
 import React from 'react';
+import '../styles/style.scss';
 import '../styles/home.scss';
 import { Fade } from 'react-reveal';
 import { Link } from 'react-router-dom';
 
-const pinkLeft = require('../assets/home/pink-left.png');
-const yellowRight = require('../assets/home/yellow-right.png');
-const line = require('../assets/home/line.png');
-const lineMobile = require('../assets/home/line-mobile.png');
-const purpleLeft = require('../assets/home/purple-left.png');
-const orangeRight = require('../assets/home/orange-right.png');
-const blueBottom = require('../assets/home/blue-bottom.png');
+const anca = require('../assets/anca.png');
+const dali = require('../assets/dali.png');
+const femme = require('../assets/femme.png');
+const sixamhealth = require('../assets/sixamhealth.png');
+const caityland = require('../assets/caityland.png');
+const immerse = require('../assets/immerse.png');
+const diversity = require('../assets/diversity.png');
 
-const anca = require('../assets/home/anca.png');
-const recentWorkExample = require('../assets/home/recent-work.png');
-
-const pinkDottedLineLeft = require('../assets/home/pink-dotted-line-left.png');
-const pinkDottedLineRight = require('../assets/home/pink-dotted-line-right.png');
-
-const linkedinIcon = require('../assets/home/linkedin-icon.png');
-const mailIcon = require('../assets/home/mail-icon.png');
-
-export default class Home extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      lineImage: window.innerWidth < 900 ? lineMobile : line,
-      lineType: window.innerWidth < 900 ? 'mobile' : 'full',
-      recentProjWrap: window.innerWidth < 1206,
-    };
-
-    window.onresize = () => {
-      if (window.innerWidth < 1209) {
-        this.setState({
-          recentProjWrap: true,
-        });
-      } else {
-        this.setState({
-          recentProjWrap: false,
-        });
-      }
-
-      if (window.innerWidth < 900 && this.state.lineType !== 'mobile') {
-        this.setState({
-          lineImage: lineMobile,
-          lineType: 'mobile',
-        });
-      } else if (this.state.lineType !== 'full') {
-        this.setState({
-          lineImage: line,
-          lineType: 'full',
-        });
-      }
-    };
-  }
-
-  render() {
-    return (
-      <div id="home">
-        <div id="background-images">
-          <div id="background-content">
-            <div className="background-flex">
-              <Fade left><img src={pinkLeft} alt="pink left" id="pink-left" /></Fade>
-              <Fade right><img src={yellowRight} alt="yellow right" id="yellow-right" /></Fade>
+const Home = () => {
+  return (
+    <div className="content-container">
+      <div id="home-content">
+        <div id="welcome-area">
+          <Fade up>
+            <img src={anca} alt="anca" id="anca" />
+            <div id="welcome-text">
+              <h1>Hi there, I&apos;m Anca</h1>
+              <h2>Product Designer at <a href="http://dali.dartmouth.edu" target="_blank" rel="noopener noreferrer">DALI Lab</a></h2>
+              <div className="purple-bar" />
+              <div id="description-text">
+                <p>World traveler and people-enthusiast.</p>
+                <p>I enjoy building experiences that change how we think and make a social impact.</p>
+                <p>Current Human-Centered Design student at Dartmouth College with almost 3 years of hands-on project experience.</p>
+              </div>
+              <div id="button-area">
+                <Link to="/about"><div className="button">ABOUT</div></Link>
+                <a href="mailto:Anca.I.Balaceanu.20@Dartmouth.edu"><div className="button" id="middle">CONTACT</div></a>
+                <Link to="/resume"><div className="button">RESUME</div></Link>
+              </div>
             </div>
-
-            <Fade up><img src={this.state.lineImage} alt="line" id="line" /></Fade>
-
-            <div className="background-flex">
-              <Fade left><img src={purpleLeft} alt="purple left" id="purple-left" /></Fade>
-              <Fade right><img src={orangeRight} alt="orange right" id="orange-right" /></Fade>
-            </div>
-
-            <Fade up><img src={blueBottom} alt="blue bottom" id="blue-bottom" /></Fade>
+          </Fade>
+        </div>
+        <div className="project-section">
+          <div>
+            <Fade up delay={750}>
+              <div id="section-header-area">
+                <div className="purple-bar" />
+                <h3>ONGOING PROJECTS</h3>
+              </div>
+            </Fade>
+            <Fade up>
+              <div id="section-content-area">
+                <a href="https://medium.com/@anca.i.balaceanu.20/design-crits-program-c0fd66ec95f9" target="_blank" rel="noopener noreferrer">
+                  <div className="content">
+                    <img src={dali} alt="DALI Design Crits" />
+                    <div className="content-bottom">
+                      <h3>Design Crits Program</h3>
+                      <h4>Experience Design</h4>
+                      <p>Building a support-sytem to accelerate the growth of designers in DALI Lab.</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://medium.com/@anca.i.balaceanu.20/femme-8746301f72c2" target="_blank" rel="noopener noreferrer">
+                  <div className="content">
+                    <img src={femme} alt="Femme" />
+                    <div className="content-bottom">
+                      <h3>Femme</h3>
+                      <h4>Concept UI/UX Design</h4>
+                      <p>Connecting women globally through meaningful friendships.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </Fade>
           </div>
         </div>
-
-        <div id="home-content">
-          <div id="welcome-area">
-            <Fade up>
-              <div id="welcome-text">
-                <h1>WELCOME, I’M ANCA</h1>
-                <h3>I’m a UX designer who wants to understand how people think.</h3>
-                <div id="welcome-bar" />
-              </div>
-              <img src={anca} alt="anca" id="anca" />
-            </Fade>
-          </div>
-
-          <div id="recent-work-section">
-            <Fade up>
-              <h1 className="section-title">RECENT WORK</h1>
-              <div id="recent-work">
-                <div className="work-area">
-                  <Fade up>
-                    <img src={recentWorkExample} alt="recent work example" />
-                    <div id="work-sample" className="work-sample-right">
-                      <h2>Name of Project</h2>
-                      <h3>my role</h3>
-                      <div className="recent-work-line" />
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <Link to="/demo-project"><h3 className="read-case-button">read case</h3></Link>
-                    </div>
-                  </Fade>
-                </div>
-
-                <div className="work-area">
-                  {this.state.recentProjWrap ? (
-                    <Fade up>
-                      <img src={recentWorkExample} alt="recent work example" />
-                      <div id="work-sample" className="work-sample-right">
-                        <h2>Name of Project</h2>
-                        <h3>my role</h3>
-                        <div className="recent-work-line" />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <Link to="/demo-project"><h3 className="read-case-button">read case</h3></Link>
-                      </div>
-                    </Fade>
-                  ) : (
-                    <Fade up>
-                      <div id="work-sample" className="work-sample-right">
-                        <h2>Name of Project</h2>
-                        <h3>my role</h3>
-                        <div className="recent-work-line" />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <Link to="/demo-project"><h3 className="read-case-button">read case</h3></Link>
-                      </div>
-                      <img src={recentWorkExample} alt="recent work example" />
-                    </Fade>
-                  )}
-                </div>
-
-                <div className="work-area">
-                  <Fade up>
-                    <img src={recentWorkExample} alt="recent work example" />
-                    <div id="work-sample" className="work-sample-right">
-                      <h2>Name of Project</h2>
-                      <h3>my role</h3>
-                      <div className="recent-work-line" />
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <Link to="/demo-project"><h3 className="read-case-button">read case</h3></Link>
-                    </div>
-                  </Fade>
-                </div>
-              </div>
-            </Fade>
-          </div>
-
-          <div id="skills-section">
-            <Fade up>
-              <h1 className="section-title">SKILLS</h1>
-            </Fade>
-
-            <div id="skills">
-              <div className="skills-text-area">
-                <h2>Skill 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-
-              <div className="skills-filler-area">
-                <img src={pinkDottedLineLeft} alt="pink dotted line left" />
-              </div>
-
-              <div className="skills-text-area">
-                <h2>Skill 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-
-              <div className="skills-filler-area">
-                <img src={pinkDottedLineRight} alt="pink dotted line right" />
-              </div>
-
-              <div className="skills-text-area">
-                <h2>Skill 3</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
+        <div className="project-section">
+          <Fade up delay={750}>
+            <div id="section-header-area">
+              <div className="purple-bar" />
+              <h3>PAST WORK</h3>
             </div>
-
-          </div>
-
-          <div id="bottom-section">
-            <h2>Let’s get in touch!</h2>
-            <div id="connect-section">
-              <a href="https://www.linkedin.com/in/ancabalaceanu" target="_blank" rel="noopener noreferrer"><img src={linkedinIcon} alt="linkedin icon" id="linkedin" className="connect-icon" /></a>
-              <a href="mailto:anca.i.balaceanu.20@dartmouth.edu"><img src={mailIcon} alt="mail icon" id="mail" className="connect-icon" /></a>
+          </Fade>
+          <Fade up>
+            <div id="section-content-area">
+              <a href="https://medium.com/@anca.i.balaceanu.20/6am-health-3770ddbb79c5" target="_blank" rel="noopener noreferrer">
+                <div className="content">
+                  <img src={sixamhealth} alt="6AM Health" />
+                  <div className="content-bottom">
+                    <h3>6AM Health</h3>
+                    <h4>UI/UX Design</h4>
+                    <p>Rethinking healthy food and building habits.</p>
+                  </div>
+                </div>
+              </a>
+              <a href="https://medium.com/@anca.i.balaceanu.20/caityland-25e00f42a32d" target="_blank" rel="noopener noreferrer">
+                <div className="content">
+                  <img src={caityland} alt="Caityland" />
+                  <div className="content-bottom">
+                    <h3>Caityland</h3>
+                    <h4>Product Design</h4>
+                    <p>How do we create delight for someone on the autism spectrum?</p>
+                  </div>
+                </div>
+              </a>
+              <a href="https://medium.com/@anca.i.balaceanu.20/immerse-doc-d08021b4f423" target="_blank" rel="noopener noreferrer">
+                <div className="content">
+                  <img src={immerse} alt="Immerse@DOC" />
+                  <div className="content-bottom">
+                    <h3>Immerse@DOC</h3>
+                    <h4>Concept UI/UX Design</h4>
+                    <p>Empowering professors to create an immersive classrom experience in the outdoors.</p>
+                  </div>
+                </div>
+              </a>
+              <a href="https://medium.com/@anca.i.balaceanu.20/diversity-in-media-a0ee22f185bb" target="_blank" rel="noopener noreferrer">
+                <div className="content">
+                  <img src={diversity} alt="Diversity in Media" />
+                  <div className="content-bottom">
+                    <h3>Diversity in Media</h3>
+                    <h4>User Research</h4>
+                    <p>Paving the road towards changing the representation of minorities on screen.</p>
+                  </div>
+                </div>
+              </a>
             </div>
-          </div>
+          </Fade>
         </div>
+        <Fade up>
+          <div className="connect-section">
+            <h2>I’m constantly looking to learn and make new friends. Let’s get in touch!</h2>
+            <a href="mailto:Anca.I.Balaceanu.20@Dartmouth.edu">CONTACT</a>
+          </div>
+        </Fade>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
+export default Home;

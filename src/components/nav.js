@@ -2,18 +2,15 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import '../styles/nav.scss';
 
-const headerImage = require('../assets/header.png');
-
 const Nav = (props) => {
   return (
     <nav>
-      <NavLink to="/"><img src={headerImage} alt="home icon" /></NavLink>
+      <div id="name-area"><NavLink to="/">Anca Balaceanu</NavLink></div>
       <div id="navlinks">
-        <NavLink to="/" id="home">home</NavLink>
-        { props.location.pathname === '/digital' ? <NavLink to="/digital" id="current-page">digital</NavLink> : <NavLink to="/digital">digital</NavLink>}
-        { props.location.pathname === '/physical' ? <NavLink to="/physical" id="current-page">physical</NavLink> : <NavLink to="/physical">physical</NavLink>}
-        { props.location.pathname === '/art' ? <NavLink to="/art" id="current-page">art</NavLink> : <NavLink to="/art">art</NavLink>}
-        { props.location.pathname === '/about' ? <NavLink to="/about" id="current-page">about me</NavLink> : <NavLink to="/about">about me</NavLink>}
+        { props.location.pathname === '/' ? <NavLink to="/" id="current-page">Work</NavLink> : <NavLink to="/">Work</NavLink>}
+        { props.location.pathname === '/about' ? <NavLink to="/about" id="current-page">About</NavLink> : <NavLink to="/about">About</NavLink>}
+        <a href="mailto:Anca.I.Balaceanu.20@Dartmouth.edu">Contact</a>
+        { props.location.pathname === '/resume' ? <NavLink to="/resume" id="current-page">Resume</NavLink> : <NavLink to="/resume">Resume</NavLink>}
       </div>
     </nav>
   );

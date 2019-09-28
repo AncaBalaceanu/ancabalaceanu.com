@@ -8,15 +8,27 @@ nav {
         height: 50px;
     }
 
-    #navlinks {
+    #name-area {
+        padding-top: 8px;
+
         a {
             font-weight: bold;
-            color: #2832D2;
+            font-size: 34px;
+            color: #5F5F5F;
+            padding-left: 35px;
+            text-decoration: none;
+        }
+    }
+
+    #navlinks {
+        a {
+            font-weight: 500;
+            color: #ABABAB;
             text-decoration: none;
         }
 
         a:hover {
-            text-decoration: underline;
+            color: #5C5C5C;
         }
     }
 }
@@ -39,13 +51,12 @@ nav {
             align-items: center;
 
             a {
-                font-size: 28px;
+                font-size: 24px;
                 padding: 15px 40px;
             }
 
             #current-page {
-                color: white;
-                background-color: #2832D2;
+                color: #5C5C5C;
             }
 
             #home {
@@ -64,7 +75,7 @@ nav {
         padding-top: 20px;
         padding-bottom: 20px;
 
-        img {
+        #name-area {
             display: none;
         }
 

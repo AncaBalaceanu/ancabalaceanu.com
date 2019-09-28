@@ -1,0 +1,99 @@
+#about-content {
+    margin-top: 45px;
+
+    #top-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            color: #3D3D3D;
+            max-width: 500px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        img {
+            width: 461px;
+            height: 513px;
+            border-radius: 20px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+    }
+
+    .interests-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        #section-header-area {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-left: -100px;
+
+            h3 {
+                color: #727272;
+                size: 28px;
+                margin-top: -10px;
+                margin-left: 25px;
+            }
+        }
+
+        #section-text-area {
+            p {
+                max-width: 800px;
+                color: #808080;
+                font-size: 20px;
+
+                .emphasize {
+                    color: #5D5D5D;
+                    font-weight: 600;
+                    font-size: 24px;
+                }
+
+                a {
+                    color: #434CD6;
+                    text-decoration: underline;
+                }
+            }
+
+            p.block {
+                color: #434CD6;
+                font-weight: bold;
+                font-size: 36px;
+                margin-top: 200px;
+                margin-bottom: 200px;
+            }
+        }
+
+        #section-fun-area {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 800px;
+            margin-top: 40px;
+
+            .fun-section {
+                img {
+                    width: 346px;
+                    height: 461px;
+                    border-radius: 20px;
+                }
+
+                p {
+                    max-width: 346px;
+                    font-size: 22px;
+                    color: #808080;
+                    font-weight: 500;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
