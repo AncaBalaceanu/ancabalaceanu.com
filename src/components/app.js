@@ -8,8 +8,6 @@ import ScrollToTop from './scroll_to_top';
 import Home from './home';
 import Nav from './nav';
 import About from './about';
-import Contact from './contact';
-import Resume from './resume';
 import Fallback from './fallback';
 
 const NavWithRouter = withRouter(props => <Nav {...props} />);
@@ -23,8 +21,6 @@ const App = () => {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/resume" component={Resume} />
             <Route component={Fallback} />
           </Switch>
         </div>

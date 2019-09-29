@@ -11,6 +11,7 @@ const sixamhealth = require('../assets/sixamhealth.png');
 const caityland = require('../assets/caityland.png');
 const immerse = require('../assets/immerse.png');
 const diversity = require('../assets/diversity.png');
+const downArrow = require('../assets/down-arrow.png');
 
 const Home = () => {
   return (
@@ -28,47 +29,19 @@ const Home = () => {
                 <p>I enjoy building experiences that change how we think and make a social impact.</p>
                 <p>Current Human-Centered Design student at Dartmouth College with almost 3 years of hands-on project experience.</p>
               </div>
+              <div id="description-text-mobile">
+                <p>Cognitive Science & Human-Centered Design</p>
+                <p>Dartmouth College 2020</p>
+                <p>3 years of hands-on project experience</p>
+                <br />
+                <p>I enjoy designing for social change and human connection. </p>
+              </div>
               <div id="button-area">
-                <Link to="/about"><div className="button">ABOUT</div></Link>
                 <a href="mailto:Anca.I.Balaceanu.20@Dartmouth.edu"><div className="button" id="middle">CONTACT</div></a>
                 <Link to="/resume"><div className="button">RESUME</div></Link>
               </div>
             </div>
           </Fade>
-        </div>
-        <div className="project-section">
-          <div>
-            <Fade up delay={750}>
-              <div id="section-header-area">
-                <div className="purple-bar" />
-                <h3>ONGOING PROJECTS</h3>
-              </div>
-            </Fade>
-            <Fade up>
-              <div id="section-content-area">
-                <a href="https://medium.com/@anca.i.balaceanu.20/design-crits-program-c0fd66ec95f9" target="_blank" rel="noopener noreferrer">
-                  <div className="content">
-                    <img src={dali} alt="DALI Design Crits" />
-                    <div className="content-bottom">
-                      <h3>Design Crits Program</h3>
-                      <h4>Experience Design</h4>
-                      <p>Building a support-sytem to accelerate the growth of designers in DALI Lab.</p>
-                    </div>
-                  </div>
-                </a>
-                <a href="https://medium.com/@anca.i.balaceanu.20/femme-8746301f72c2" target="_blank" rel="noopener noreferrer">
-                  <div className="content">
-                    <img src={femme} alt="Femme" />
-                    <div className="content-bottom">
-                      <h3>Femme</h3>
-                      <h4>Concept UI/UX Design</h4>
-                      <p>Connecting women globally through meaningful friendships.</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </Fade>
-          </div>
         </div>
         <div className="project-section">
           <Fade up delay={750}>
@@ -122,10 +95,45 @@ const Home = () => {
             </div>
           </Fade>
         </div>
+        <div className="project-section">
+          <div>
+            <Fade up>
+              <div id="section-header-area">
+                <div className="purple-bar" />
+                <h3>ONGOING PROJECTS</h3>
+              </div>
+            </Fade>
+            <Fade up>
+              <div id="section-content-area">
+                <a href="https://medium.com/@anca.i.balaceanu.20/design-crits-program-c0fd66ec95f9" target="_blank" rel="noopener noreferrer">
+                  <div className="content">
+                    <img src={dali} alt="DALI Design Crits" />
+                    <div className="content-bottom">
+                      <h3>Design Crits Program</h3>
+                      <h4>Experience Design</h4>
+                      <p>Building a support-sytem to accelerate the growth of designers in DALI Lab.</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://medium.com/@anca.i.balaceanu.20/femme-8746301f72c2" target="_blank" rel="noopener noreferrer">
+                  <div className="content">
+                    <img src={femme} alt="Femme" />
+                    <div className="content-bottom">
+                      <h3>Femme</h3>
+                      <h4>Concept UI/UX Design</h4>
+                      <p>Connecting women globally through meaningful friendships.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </Fade>
+          </div>
+        </div>
         <Fade up>
           <div className="connect-section">
             <h2>I’m constantly looking to learn and make new friends. Let’s get in touch!</h2>
             <a href="mailto:Anca.I.Balaceanu.20@Dartmouth.edu">CONTACT</a>
+            <img src={downArrow} alt="down arrow" />
           </div>
         </Fade>
       </div>
