@@ -2,11 +2,10 @@ import React from 'react';
 import '../styles/style.scss';
 import '../styles/home.scss';
 import { Fade } from 'react-reveal';
-import { Link } from 'react-router-dom';
 
 const anca = require('../assets/anca.png');
 const dali = require('../assets/dali.png');
-const femme = require('../assets/femme.png');
+// const femme = require('../assets/femme.png');
 const sixamhealth = require('../assets/sixamhealth.png');
 const caityland = require('../assets/caityland.png');
 const immerse = require('../assets/immerse.png');
@@ -25,9 +24,11 @@ const Home = () => {
               <h2>Product Designer at <a href="http://dali.dartmouth.edu" target="_blank" rel="noopener noreferrer">DALI Lab</a></h2>
               <div className="purple-bar" />
               <div id="description-text">
-                <p>World traveler and people-enthusiast.</p>
-                <p>I enjoy building experiences that change how we think and make a social impact.</p>
-                <p>Current Human-Centered Design student at Dartmouth College with almost 3 years of hands-on project experience.</p>
+                <p>Cognitive Science & Human-Centered Design</p>
+                <p>Dartmouth College 2020</p>
+                <p>3 years of hands-on project experience</p>
+                <br />
+                <p>I enjoy designing for social change and human connection. </p>
               </div>
               <div id="description-text-mobile">
                 <p>Cognitive Science & Human-Centered Design</p>
@@ -38,7 +39,7 @@ const Home = () => {
               </div>
               <div id="button-area">
                 <a href="mailto:Anca.I.Balaceanu.20@Dartmouth.edu"><div className="button" id="middle">CONTACT</div></a>
-                <Link to="/resume"><div className="button">RESUME</div></Link>
+                <a href="https://drive.google.com/open?id=1hpJA0ItOirFBCZixOA29pdBa38mFFxbB" target="_blank" rel="noopener noreferrer"><div className="button">RESUME</div></a>
               </div>
             </div>
           </Fade>
@@ -115,7 +116,7 @@ const Home = () => {
                     </div>
                   </div>
                 </a>
-                <a href="https://medium.com/@anca.i.balaceanu.20/femme-8746301f72c2" target="_blank" rel="noopener noreferrer">
+                {/* <a href="https://medium.com/@anca.i.balaceanu.20/femme-8746301f72c2" target="_blank" rel="noopener noreferrer">
                   <div className="content">
                     <img src={femme} alt="Femme" />
                     <div className="content-bottom">
@@ -124,7 +125,7 @@ const Home = () => {
                       <p>Connecting women globally through meaningful friendships.</p>
                     </div>
                   </div>
-                </a>
+                </a> */}
               </div>
             </Fade>
           </div>

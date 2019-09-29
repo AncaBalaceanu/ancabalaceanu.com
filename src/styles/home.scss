@@ -41,11 +41,14 @@
 
             #description-text {
                 margin-top: 35px;
+                margin-bottom: 25px;
 
                 p {
                     max-width: 500px;
                     font-size: 20px;
                     color: #8D8D8D;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
                 }
             }
 
@@ -71,6 +74,12 @@
                     padding: 10px 25px;
                     border: 1px solid #2832D2;
                     border-radius: 20px;       
+                }
+
+                .button:hover {
+                    background-color: #2832D2;
+                    border: 1px solid white;
+                    color: white;
                 }
 
                 #middle {
@@ -170,6 +179,16 @@
     .connect-section {
         img {
             display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1101px) {
+    #home-content {
+        .project-section {
+            #section-content-area {
+                justify-content: flex-start;
+            }
         }
     }
 }
