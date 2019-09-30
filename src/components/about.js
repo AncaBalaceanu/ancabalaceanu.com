@@ -13,7 +13,15 @@ const About = () => {
     <div className="content-container">
       <div id="about-content">
         <div id="top-section">
-          <Fade top><h1>My name is Anca and I’m a Romanian born designer, dancer, and goldfish lover.</h1></Fade>
+          <Fade top>
+            <div id="top-section-text">
+              <h1>Learn more about me</h1>
+              <h2>I’m a Romanian born designer, world traveler, and goldfish lover.</h2>
+              <div id="link-area">
+                <a href="https://drive.google.com/open?id=1hpJA0ItOirFBCZixOA29pdBa38mFFxbB" target="_blank" rel="noopener noreferrer">RESUME</a>
+              </div>
+            </div>
+          </Fade>
           <Fade bottom><img src={anca} alt="Anca" /></Fade>
         </div>
         <div id="top-section-mobile">
