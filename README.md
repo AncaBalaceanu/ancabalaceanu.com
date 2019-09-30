@@ -1,2 +1,0 @@
-# ancabalaceanu.com
-# anca-portfolio
