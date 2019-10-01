@@ -16,7 +16,7 @@ const Nav = (props) => {
         { props.location.pathname === '/' ? <NavLink to="/" id="current-page">Work</NavLink> : <NavLink to="/">Work</NavLink>}
         { props.location.pathname === '/about' ? <NavLink to="/about" id="current-page">About</NavLink> : <NavLink to="/about">About</NavLink>}
         <a href="mailto:Anca.I.Balaceanu.20@Dartmouth.edu">Contact</a>
-        <a href="https://drive.google.com/open?id=1hpJA0ItOirFBCZixOA29pdBa38mFFxbB" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a href="https://drive.google.com/file/d/1hJ6IFZuNh4sZqg-e6_PLLXK5JeKT1JbM/view" target="_blank" rel="noopener noreferrer">Resume</a>
       </div>
       <div id="navlinks-mobile">
         <div className="navlink-button">

@@ -39,7 +39,7 @@ const Home = () => {
               </div>
               <div id="button-area">
                 <a href="mailto:Anca.I.Balaceanu.20@Dartmouth.edu"><div className="button" id="middle">CONTACT</div></a>
-                <a href="https://drive.google.com/open?id=1hpJA0ItOirFBCZixOA29pdBa38mFFxbB" target="_blank" rel="noopener noreferrer"><div className="button">RESUME</div></a>
+                <a href="https://drive.google.com/file/d/1hJ6IFZuNh4sZqg-e6_PLLXK5JeKT1JbM/view" target="_blank" rel="noopener noreferrer"><div className="button">RESUME</div></a>
               </div>
             </div>
           </Fade>

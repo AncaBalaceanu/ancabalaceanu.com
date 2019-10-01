@@ -18,7 +18,7 @@ const About = () => {
               <h1>Learn more about me</h1>
               <h2>I’m a Romanian born designer, world traveler, and goldfish lover.</h2>
               <div id="link-area">
-                <a href="https://drive.google.com/open?id=1hpJA0ItOirFBCZixOA29pdBa38mFFxbB" target="_blank" rel="noopener noreferrer">RESUME</a>
+                <a href="https://drive.google.com/file/d/1hJ6IFZuNh4sZqg-e6_PLLXK5JeKT1JbM/view" target="_blank" rel="noopener noreferrer">RESUME</a>
               </div>
             </div>
           </Fade>
@@ -29,7 +29,7 @@ const About = () => {
           <Fade bottom>
             <h1>Learn more about me</h1>
             <h2>I’m a Romanian born designer, world traveler, and goldfish lover.</h2>
-            <a href="https://drive.google.com/open?id=1hpJA0ItOirFBCZixOA29pdBa38mFFxbB" target="_blank" rel="noopener noreferrer">RESUME</a>
+            <a href="https://drive.google.com/file/d/1hJ6IFZuNh4sZqg-e6_PLLXK5JeKT1JbM/view" target="_blank" rel="noopener noreferrer">RESUME</a>
           </Fade>
         </div>
         <div className="interests-section">
