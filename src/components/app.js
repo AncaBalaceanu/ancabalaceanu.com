@@ -9,6 +9,7 @@ import Home from './home';
 import Nav from './nav';
 import About from './about';
 import Fallback from './fallback';
+import ExampleCaseStudy from './case-studies/example';
 
 const NavWithRouter = withRouter(props => <Nav {...props} />);
 
@@ -21,6 +22,7 @@ const App = () => {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
+            <Route path="/case-studies/example" component={ExampleCaseStudy} />
             <Route component={Fallback} />
           </Switch>
         </div>
